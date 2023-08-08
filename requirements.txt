@@ -1,6 +1,9 @@
-numpy
-scipy
-matplotlib
-jax
-jaxlib
-emcee
+corner==2.2.2
+daft==0.1.2
+emcee==3.1.4
+jax==0.4.14
+matplotlib==3.7.1
+numpy==1.24.3
+pytest==7.3.1
+scipy==1.10.1
+setuptools==67.8.0
