@@ -174,7 +174,7 @@ class inference:
         self.nodes = nodes
         self.weights = weights
         self.means = means
-        self.jitters = np.array(jitters, dtype=np.float)
+        self.jitters = np.array(jitters, dtype=float)
         self._components_set = True
 
     def get_parameters(self, nodes=None, weights=None, means=None,
