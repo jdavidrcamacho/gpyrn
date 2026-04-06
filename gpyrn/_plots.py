@@ -113,7 +113,7 @@ def plot_prediction(gprn, nn=1000, tstar=None, over=0.2, title=None):
     axs['node'].set_title('node' + _s, loc='left', fontsize=10)
     axs['node'].plot(tstar, bb[0].T, '-')
 
-    equal_y_axis(axs['node'])
+    # equal_y_axis(axs['node'])
     ax0 = axs['pred1']
     for ax in axs.values():
         ax.sharex(ax0)
