@@ -1,7 +1,7 @@
+import numpy as np
 import pytest
 
-import numpy as np
-from gpyrn.covfunc import SquaredExponential, Periodic, QuasiPeriodic
+from gpyrn.covfunc import Periodic, QuasiPeriodic, SquaredExponential
 
 
 def test_QP_equals_prod():

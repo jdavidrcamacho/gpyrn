@@ -1,8 +1,8 @@
+import numpy as np
 import pytest
 
-import numpy as np
-from gpyrn.meanfield import inference
 from gpyrn import covfunc, meanfunc
+from gpyrn.meanfield import inference
 
 
 def test_create_inference():

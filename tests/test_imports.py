@@ -3,6 +3,4 @@ def test_import():
 
 
 def test_imports():
-    from gpyrn import covfunc
-    from gpyrn import meanfunc
-    from gpyrn import meanfield
+    from gpyrn import covfunc, meanfield, meanfunc

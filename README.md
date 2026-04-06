@@ -1,5 +1,5 @@
 <a href="https://iastro-pt.github.io/gpyrn/">
-    <img align="left" width="200" height="200" src="https://i.imgur.com/8jqfpoz.png"> 
+    <img align="left" width="200" height="200" src="https://i.imgur.com/8jqfpoz.png">
 </a>
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/iastro-pt/gpyrn/blob/master/LICENSE)
@@ -21,12 +21,12 @@
 **Modelling stellar activity with Gaussian process regression networks**
 
 `gpyrn` is a Python package implementing a GPRN framework for the analysis of RV
-datasets.  
+datasets.
 A GPRN is a model for multi-output regression which exploits the
 structural properties of neural networks and the flexibility of Gaussian
 processes.
 
-> The GPRN was originally proposed by 
+> The GPRN was originally proposed by
   [Wilson et al. (2012)](https://icml.cc/2012/papers/329.pdf).
 
 
@@ -65,5 +65,5 @@ If you use this package in your work, please cite the following publication
 
 ### License
 
-Copyright 2022 Institute of Astrophysics and Space Sciences.  
+Copyright 2026 João Camacho
 Licensed under the MIT license (see [`LICENSE`](https://github.com/iastro-pt/gpyrn/blob/main/LICENSE)).
