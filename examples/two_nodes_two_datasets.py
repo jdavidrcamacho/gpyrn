@@ -1,15 +1,5 @@
-import matplotlib
-import numpy as np
-
-matplotlib.rcParams.update(
-    {
-        "pgf.texsystem": "pdflatex",
-        "font.family": "serif",
-        "text.usetex": True,
-        "pgf.rcfonts": False,
-    }
-)
 import matplotlib.pylab as plt
+import numpy as np
 
 plt.close("all")
 from matplotlib.ticker import AutoMinorLocator
@@ -31,7 +21,6 @@ plt.xlabel("Time (days)")
 plt.ylabel("Measurements")
 plt.legend(loc="upper right", facecolor="white", framealpha=1, edgecolor="black")
 plt.grid(which="major", alpha=0.5)
-plt.savefig("data3.png", bbox_inches="tight")
 
 gprn = variational.MeanFieldInference(2, time, y1, y1err, y2, y2err)
 
@@ -97,4 +86,5 @@ axs["weight 3"].plot(tstar, b[1][2].T, "-b")
 axs["weight 4"].set(xlabel="", ylabel="4th weight")
 axs["weight 4"].plot(tstar, b[1][3].T, "-b")
 
-fig.savefig("componentsPlots2.png", bbox_inches="tight")
+
+plt.show()

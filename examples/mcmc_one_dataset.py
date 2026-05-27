@@ -1,15 +1,5 @@
-import matplotlib
-import numpy as np
-
-matplotlib.rcParams.update(
-    {
-        "pgf.texsystem": "pdflatex",
-        "font.family": "serif",
-        "text.usetex": True,
-        "pgf.rcfonts": False,
-    }
-)
 import matplotlib.pylab as plt
+import numpy as np
 
 plt.close("all")
 plt.rcParams["figure.figsize"] = [8, 4]
@@ -86,7 +76,7 @@ sampler = emcee.EnsembleSampler(
 )
 
 p0 = [priors() for i in range(nwalkers)]
-sampler.run_mcmc(p0, 100000, progress=True)
+sampler.run_mcmc(p0, 1000, progress=True)
 
 # chains plot
 fig, axes = plt.subplots(6, figsize=(7, 12), sharex=True)
@@ -106,8 +96,6 @@ for i in range(ndim):
     ax.set_ylabel(labels[i])
     ax.yaxis.set_label_coords(-0.1, 0.5)
 axes[-1].set_xlabel("step number")
-plt.savefig("chains.png", bbox_inches="tight")
-plt.close("all")
 
 # corner plot
 flat_samples = sampler.get_chain(discard=500, thin=10, flat=True)
@@ -125,5 +113,5 @@ fig = corner.corner(
     fill_contours=True,
     plot_datapoints=False,
 )
-plt.savefig("corner.png", bbox_inches="tight")
-plt.close("all")
+
+plt.show()
