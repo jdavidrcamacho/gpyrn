@@ -4,18 +4,18 @@ package directly or each of the three sub-packages
 ```python
 import gpyrn
 
-from gpyrn import meanfunc, covfunc, meanfield
+from gpyrn import kernels, means, variational
 ```
 
-The `covfunc` package provides covariance functions (kernels) to be used for the
-GPRN nodes and weights. `meanfunc` provides the mean functions to use for a
+The `kernels` module provides covariance functions to be used for the
+GPRN nodes and weights. `means` provides the mean functions to use for a
 given dataset. Note that, in the GPRN model, the nodes and weights are
 independent GPs with mean zero; these mean functions will apply to the output
 datasets. The heavy-lifting is done by the mean-field approximation that is
-implemented in `meanfield`. 
+implemented in `variational`.
 
 As described in the [examples](/examples), the typical use will be to
-instantiate a `meanfield.inference` object passing in the observed datasets, and
+instantiate a `variational.MeanFieldInference` object passing in the observed datasets, and
 then defining the GPRN components (nodes, weights, and means). So typically you
 would do something like
 
@@ -24,18 +24,18 @@ would do something like
 # load data...
 
 # create an inference object
-gprn = meanfield.inference(N_NODES, time_array, *outputs_and_errors)
+gprn = variational.MeanFieldInference(N_NODES, time_array, *outputs_and_errors)
 
 # define GPRN components
 nodes = [
-    covfunc. ...
+    kernels. ...
 ]
 weights = [
-    covfunc. ...
+    kernels. ...
 ]
 
 means = [
-    meanfunc. ...
+    means. ...
 ]
 
 jitters = [...]

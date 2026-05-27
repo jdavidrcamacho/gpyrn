@@ -14,21 +14,21 @@ help:
 
 .PHONY: format-check
 format-check:
-	black --check gpyrn/ tests/
-	isort --check-only gpyrn/ tests/
+	black --check src/gpyrn/ examples/ tests/
+	isort --check-only src/gpyrn/ examples/ tests/
 
 .PHONY: format-fix
 format-fix:
-	black gpyrn/ tests/
-	isort gpyrn/ tests/
+	black src/gpyrn/ examples/ tests/
+	isort src/gpyrn/ examples/ tests/
 
 .PHONY: lint-check
 lint-check:
-	flake8 --statistics gpyrn/ tests/
+	flake8 --statistics src/gpyrn/ examples/ tests/
 
 .PHONY: type-check
 type-check:
-	mypy gpyrn/ tests/
+	mypy src/gpyrn/ tests/
 
 .PHONY: unit-test
 unit-test:
@@ -36,5 +36,4 @@ unit-test:
 
 .PHONY: docstring-check
 docstring-check:
-	pydocstyle gpyrn/
-
+	pydocstyle src/gpyrn/

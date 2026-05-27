@@ -5,7 +5,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-from gpyrn import meanfield, covfunc, meanfunc
+from gpyrn import kernels, means, variational
 ```
 
 
