@@ -18,7 +18,7 @@ installing directly from source
 ```
 git clone https://github.com/iastro-pt/gpyrn.git
 cd gpyrn
-python setup.py install
+python -m pip install -e .
 ```
 
 ### Where to go from here

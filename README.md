@@ -27,12 +27,17 @@ structural properties of neural networks and the flexibility of Gaussian
 processes.
 
 > The GPRN was originally proposed by
-  [Wilson et al. (2012)](https://icml.cc/2012/papers/329.pdf).
+[Wilson et al. (2012)](https://icml.cc/2012/papers/329.pdf).
 
 
 ### Documentation
 
 Documentation is available [here](https://iastro-pt.github.io/gpyrn).
+
+### Repository layout
+
+The importable package lives in `src/gpyrn`. Example scripts and generated
+figures live in `examples`, and bundled observational data lives in `data`.
 
 ### Authors
 
