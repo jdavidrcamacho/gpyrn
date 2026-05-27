@@ -7,9 +7,6 @@
 [![PyPI version fury.io](https://badge.fury.io/py/gpyrn.svg)](https://pypi.org/project/gpyrn/)
 
 
-[![Docs](https://github.com/iastro-pt/gpyrn/actions/workflows/docs.yml/badge.svg)](https://github.com/iastro-pt/gpyrn/actions/workflows/docs.yml)
-
-
 <br>
 <br>
 <br>
@@ -31,7 +28,7 @@ processes.
 
 ### Documentation
 
-Documentation is available [here](https://iastro-pt.github.io/gpyrn).
+Documentation will be available soon
 
 ### Repository layout
 
